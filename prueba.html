@@ -39,6 +39,24 @@
         document.write('<LI>Mi variable de condición es FALSE</LI>');
       }
 
+      // Control de tipos
+      var numerico = 22;
+      var numerico_flotante = 13.56;
+      var text = 'mi texto' ;
+
+
+      document.write('<H3>Estudiando los tipos de variables:</H3>') ;
+      document.write('<LI>El tipo de numerico es: ' + typeof numerico + '</LI>');
+      document.write('<LI>El tipo de numerico_flotante es: ' + typeof numerico_flotante + '</LI>');
+      document.write('<LI>El tipo de text es: ' + typeof text + '</LI>');
+
+      if ( typeof numerico == 'number' ) {
+        document.write('<LI>number es numerico</LI>');
+      }
+
+      var numeroConvertido = parseInt('20');
+      document.write('<LI>numeroConvertido vale ' + numeroConvertido + ' y es del tipo ' + typeof numeroConvertido + '</LI>');
+
   </SCRIPT>
   </BODY>
 </HTML>

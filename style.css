@@ -7,11 +7,14 @@ h1  {
 h3  {
     font-family:Calibri;
     font-size:25px;
-    padding-left:0.5cm;
+    padding-left:15px;
 }
 
 li  {
     font-family:Garamond;
     font-size:18px;
-    padding-left:1cm;
+    padding-left: 25px;
+    background-image: url("li.png");
+    background-repeat: no-repeat;
+    background-position: 0 .5em;
 }
