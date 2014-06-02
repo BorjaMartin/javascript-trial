@@ -1,0 +1,25 @@
+<HTML>
+  <HEAD>
+    <TITLE>Curso JavaScript</TITLE>
+    <link rel='stylesheet' href='style.css'/>
+  </HEAD>
+  <BODY>
+
+    <SCRIPT type="text/javascript">
+      document.write('<TABLE>');
+
+      for (i=1;i<=6;i++) {
+        document.write('<TR>');
+        var j=1;
+	do {
+          document.write('<TD>' + j + ','+ i +'</TD>');
+          j++;
+        } while (j != 5)
+        document.write('</TR>');
+      }
+        
+      document.write('</TABLE>');
+    </SCRIPT>
+
+  </BODY>
+</HTML>
