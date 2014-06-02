@@ -65,9 +65,21 @@
       // Bucles
       document.write('<H3>Bucles</H3>') ;
       for (i=1;i<=10;i++) {
-        document.write('<LI>Iteración número : ' + i + '</LI>');
+        document.write('<LI>Iteración (for)número : ' + i + '</LI>');
       }
       document.write('<LI>La variable mantiene valor, fuera del bucle : ' + i + '</LI>');
+      while (i < 3) {
+        document.write('<LI>Iteración (while) número : ' + i + '</LI>');
+        i ++;
+      }
+
+      // Bucle con petición
+      var color = 'rojo';
+      var veces = 1 ;
+
+      do {
+        color = prompt("dame un color (rojo para salir):") ;
+      } while (color != 'rojo')
 
       // Alertas
       window.alert("Esta alerta está al final del script!");
