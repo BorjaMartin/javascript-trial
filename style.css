@@ -18,3 +18,7 @@ li  {
     background-repeat: no-repeat;
     background-position: 0 .5em;
 }
+
+pre {
+    padding-left: 25px;
+}
