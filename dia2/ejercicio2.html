@@ -1,0 +1,35 @@
+<HTML>
+  <HEAD>
+    <TITLE>Curso JavaScript ~ ejercicio 2.2</TITLE>
+    <link rel='stylesheet' href='style.css'/>
+  </HEAD>
+  <BODY>
+    <SCRIPT type="text/javascript">
+      document.write('<H1>Ejercicio 2</H1>');
+      document.write('<H3>La tabla pedida</H3>');
+
+      var valor = prompt("Dame una cadena de texto:");
+
+      function signo(x) {
+        return isNaN(x) ? "Es una cadena" : 
+          x == 0 ? "0" : 
+          x > 0  ? "+" : "-";
+      }
+
+      document.write('<TABLE>');
+        document.write('<TR>');
+          document.write('<TD>¿Es un número?</TD>');
+          document.write('<TD>');
+            document.write( isNaN(valor) ? "NO" : "SI" );
+          document.write('</TD>');
+        document.write('</TR>');
+        document.write('<TR>');
+          document.write('<TD>¿Signo?</TD>');
+          document.write('<TD>');
+            document.write( signo(valor) );
+          document.write('</TD>');
+        document.write('</TR>');
+      document.write('</TABLE>');
+    </SCRIPT>
+  </BODY>
+</HTML>
