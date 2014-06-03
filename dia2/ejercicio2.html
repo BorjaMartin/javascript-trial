@@ -24,16 +24,21 @@
           document.write('</TD>');
         document.write('</TR>');
         document.write('<TR>');
-          document.write('<TD>¿Signo?</TD>');
-          document.write('<TD>');
-            document.write( signo(valor) );
-          document.write('</TD>');
-        document.write('</TR>');
-        document.write('<TR>');
+        
+        if (isNaN(valor)) {
           document.write('<TD>Cadena recortada</TD>');
           document.write('<TD>');
             document.write( '\"' + valor.trim() + '\"');
           document.write('</TD>');
+        } else {
+          document.write('<TD>¿Signo?</TD>');
+          document.write('<TD>');
+            document.write( signo(valor) );
+          document.write('</TD>');
+        }
+        document.write('</TR>');
+        document.write('<TR>');
+
         document.write('</TR>');
       document.write('</TABLE>');
     </SCRIPT>
