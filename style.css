@@ -15,6 +15,7 @@ li  {
     font-size:18px;
     padding-left: 25px;
     list-style-image: url('li.png');
+    size: 1px
 }
 
 pre {
