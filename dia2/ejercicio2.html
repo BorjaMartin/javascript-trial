@@ -16,6 +16,10 @@
           x > 0  ? "+" : "-";
       }
 
+      function clean(cad) {
+        return cad.replace(/^\s+|\s+$/g, '');
+      }
+
       document.write('<TABLE>');
         document.write('<TR>');
           document.write('<TD>¿Es un número?</TD>');
@@ -28,7 +32,7 @@
         if (isNaN(valor)) {
           document.write('<TD>Cadena recortada</TD>');
           document.write('<TD>');
-            document.write( '\"' + valor.trim() + '\"');
+            document.write( '\"' + clean(valor) + '\"');
           document.write('</TD>');
         } else {
           document.write('<TD>¿Signo?</TD>');
