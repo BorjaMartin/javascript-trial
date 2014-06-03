@@ -1,0 +1,33 @@
+h1  {
+    text-align:center;
+    font-family:Calibri;
+    font-size:40px;
+}
+
+h3  {
+    font-family:Calibri;
+    font-size:25px;
+    padding-left:15px;
+}
+
+li  {
+    font-family:Garamond;
+    font-size:18px;
+    padding-left: 25px;
+    list-style-image: url('li.png');
+    size: 1px
+}
+
+pre {
+    padding-left: 25px;
+}
+
+table
+{
+    border-collapse:collapse;
+}
+table, th, td
+{
+    border: 1px solid black;
+    padding: 5px 5px 5px 5px;
+}
