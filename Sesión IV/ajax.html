@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<title>Ejemplo de AJAX</title>
+		<script>
+		// Asyncronous Javascript And XML
+		// Esto es el estandar solo funciona en navegadores no Microsoft.
+		//var ajax = new XMLHttpRequest();
+		
+		
+		
+		
+		//Hack para que funcione en IE.
+		var ajax;
+		if( window.XMLHttpRequest ){
+			ajax = new XMLHttpRequest();
+		}else{
+			ajax = new ActiveXObject( "Microsoft.XMLHTTP" );
+		}
+		
+		function callback(){
+			if( ajax.readyState == 4 && ajax.status == 200 ){
+				document.getElementById('tiempo').innerHTML = ajax.responseText;
+			}else{
+				document.getElementById('tiempo').innerHTML = "Estado: " + ajax.status;
+			}	
+		}
+		
+		
+		function pruebaAJAX(){
+			ajax.open( "GET", "https://api.github.com/repos/Borjamartin", true );
+			ajax.onreadystatechange = callback;
+			
+			ajax.send( null );
+		}
+		
+		
+		</script>
+	</head>
+	<body>
+		<form name="fvalida">
+			<input type="button" value="Prueba AJAX" onclick="pruebaAJAX()">
+			<div id="weatherDiv"/>
+		</form>
+		<div id='tiempo'>
+		
+		</div>
+	</body>
+</html>
