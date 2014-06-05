@@ -1,11 +1,10 @@
-//JSON
-document.write('<H3>JSON, Introducción</H3>');
-// Definimos una cadena en formato JSON
-array_cadena = '{"nombre":"Pepe","direccion":{"calle":"Victoria,6","num":7}}';
-document.write('<LI>' + array_cadena + '</LI>');
+function cambiar() {
+ document.getElementById("nm").innerHTML="Me has pulsado!"
+}
 
-var persona = JSON.parse(array_cadena)
-var name = persona.nombre
+function cambiartb() {
+	alert("llll");
+ 	document.getElementById("hp").innerHTML="Me has pulsado tb!"
+}
 
-document.write('<LI> nombre: ' + name + '</LI>');
-document.write('<LI> calle: ' + persona.direccion.calle + '</LI>');
+  document.getElementById("boton").setAttribute('onClick',cambiartb());

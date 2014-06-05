@@ -1,30 +1,24 @@
-function printAlumnos(data) {
-  document.write('<TABLE>');
-  document.write('<TR><TD>Nombre</TD><TD>Apellidos</TD><TD>Edad</TD><TD>JSON</TD></TR>');
-  
-  for (i=1;i<=data.length;i++) {
-    document.write('<TR>');
-      document.write('<TD>' + data[i-1].nombre +'</TD>');
-      document.write('<TD>' + data[i-1].ap1 +'</TD>');
-      document.write('<TD>' + data[i-1].ap2 +'</TD>');
-      document.write('<TD>' + JSON.stringify(data[i-1]) +'</TD>');
-    document.write('</TR>');
-  }
-  document.write('</TABLE>');
+function addAlumno(alumno) { 
+  alert('añadiendo alumno: ' + alumno.nombre);
+  var table = document.getElementById('bbb'); 
+    var row = table.insertRow(table.rows.length);
+
+    row.insertCell(0).innerHTML = alumno.nombre;
+    row.insertCell(1).innerHTML = alumno.ap1;
+    row.insertCell(2).innerHTML = alumno.ap2;
+    row.insertCell(3).innerHTML = alumno.date;
+    row.insertCell(4).innerHTML = JSON.stringify(alumno);
 }
 
 function enviar() {
-  var data = [alumno1,alumno2];
-  var dato = document.forms["formalumno"];
-  var alumno = {"nombre":dato["nombre"].value,"ap1":dato["ap1"].value,"ap2":dato["ap1"].value,"edad":dato["fecha"].value};
-  data[data.length] = alumno;
-  printAlumnos(data);
+  //var alumno1 = {"nombre":"Borja","ap1":"Martín","ap2":"Fernández","edad":28};
+  //var alumno2 = {"nombre":"Germán","ap1":"Caballero","ap2":"Fernández","edad":28};
+
+  var name1 = document.getElementById('nombre').value;
+  var name2 = document.getElementById('ap1').value;
+  var name3 = document.getElementById('ap2').value;
+  var date = document.getElementById('fecha').value;
+  var a = {"nombre":name1,"ap1":name2,"ap2":name3,"date":date};
+
+  addAlumno(a);
 }
-
-
-
-var alumno1 = {"nombre":"Borja","ap1":"Martín","ap2":"Fernández","edad":28};
-var alumno2 = {"nombre":"Germán","ap1":"Caballero","ap2":"Fernández","edad":28};
-
-
-

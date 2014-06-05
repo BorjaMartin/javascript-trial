@@ -3,22 +3,50 @@
   <HEAD>
     <TITLE>Curso JavaScript - Form</TITLE>
     <link rel='stylesheet' href='style.css'/>
+    <script type="text/javascript" src="ejercicio1.js"></script>
   </HEAD>
   <BODY>
     <H1>Formulario de datos</H1>
+    <table><tr><td>
     <H3>Añadir Alumno</H3>
-    <FORM name="formalumno">
-      <li>Nombre: <input type="text" name="nombre"></li>
-      <li>1º Apellido: <input type="text" name="ap1"></li>
-      <li>2º Apellido: <input type="text" name="ap2"></li>
-      <li>Fecha: <input type="text" name="fecha"></li>
-      <li><button onclick="enviar()">Enviar datos!</li>
-    </FORM>
-    <br>
-    <HR>
+    <table id='table2'>
+    <tbody>
+	<tr>
+           <th>Nombre</th>
+           <td><input type="text" id="nombre"></td>
+        </tr>
+	<tr>
+           <th>1º Apellido:</th>
+           <td><input type="text" id="ap1"></td>
+        </tr>
+	<tr>
+           <th>2º Apellido:</th>
+           <td><input type="text" id="ap2"></td>
+        </tr>
+	<tr>
+           <th>Fecha:</th>
+           <td><input type="text" id="fecha"></td>
+        </tr>
+	<tr>
+           <th>Añadir alumno:</th>
+           <td><button onclick="enviar()">+</td>
+        </tr>
+    </tbody>
+    </table>
+    </td>
+    <td>
     <H3>Base de datos de Alumnos</H3>
-
-      <script type="text/javascript" src="ejercicio1.js"></script>
-      
+      <table id='table-2'>
+        <thead><tr>
+	  <th>Nombre</td>
+	  <th>1º Apellido</th>
+	  <th>2º Apellido</th>
+	  <th>Fecha</th>
+	  <th>JSON</th>
+	</tr></thead>
+	<tbody id='bbb'>
+	</tbody>
+      </table>
+     </td></tr></table>
   </BODY>
 </html>
