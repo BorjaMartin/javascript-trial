@@ -1,0 +1,106 @@
+h1  {
+    text-align:center;
+    font-family:Calibri;
+    font-size:40px;
+}
+
+h3  {
+    font-family:Calibri;
+    font-size:25px;
+    padding-left:15px;
+}
+
+li  {
+    font-family:Garamond;
+    font-size:18px;
+    padding-left: 25px;
+    list-style-image: url('li.png');
+    size: 1px
+}
+
+pre {
+    padding-left: 25px;
+}
+
+#table-2 {
+    width: 96%;
+    margin-left:auto;
+    margin-right:auto;
+    border: 1px solid #e3e3e3;
+    background-color: #f2f2f2;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    vertical-align: middle;
+}
+#table-2 td, #table-2 th {
+  padding: 3px;
+  text-align:center;
+  color: #333;
+}
+#table-2 thead {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  padding: .2em 0 .2em .5em;
+  text-align: left;
+  color: #4B4B4B;
+  background-color: #C8C8C8;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#e3e3e3), color-stop(.6,#B3B3B3));
+  background-image: -moz-linear-gradient(top, #D6D6D6, #B0B0B0, #B3B3B3 90%);
+  border-bottom: solid 1px #999;
+}
+#table-2 th {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 20px;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  text-shadow: white 1px 1px 1px;
+}
+#table-2 td {
+  line-height: 20px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff;
+}
+
+#table-2 td:hover {
+  background-color: #fff;
+}
+
+input
+{
+  border-right: #a9a9a9 1px solid;
+  padding-right: 4px;
+  border-top: #a9a9a9 1px solid;
+  padding-left: 4px;
+  padding-bottom: 4px;
+  border-left: #a9a9a9 1px solid;
+  padding-top: 4px;
+  border-bottom: #a9a9a9 1px solid;
+}
+
+input[type="text"]
+{
+  border-right: #a9a9a9 1px solid;
+  padding-right: 4px;
+  border-top: #a9a9a9 1px solid;
+  padding-left: 4px;
+  padding-bottom: 4px;
+  border-left: #a9a9a9 1px solid;
+  padding-top: 4px;
+  border-bottom: #a9a9a9 1px solid;
+}
+
+input[type="button"]
+{
+  border-right: #a9a9a9 2px solid;
+  padding-right: 2px;
+  border-top: #a9a9a9 2px solid;
+  padding-left: 2px;
+  padding-bottom: 2px;
+  border-left: #a9a9a9 2px solid;
+  padding-top: 2px;
+  border-bottom: #a9a9a9 2px solid;
+}
